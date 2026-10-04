@@ -10,9 +10,9 @@ not generate machine code or execute HL by translating it into Python `eval`.
 From this directory:
 
 ```sh
-python3 hlint.py PROG1.HL
-python3 hlint.py PROG2.HL
-python3 hlint.py PROG3.HL
+python3 HLInt.py PROG1.HL
+python3 HLInt.py PROG2.HL
+python3 HLInt.py PROG3.HL
 ```
 
 Pass any source-file path as the single argument. Each run writes `NOSPACES.TXT`
@@ -63,7 +63,7 @@ HL source → preprocessing → lexer → parser → AST → semantic checking �
 
 | File | Responsibility |
 | --- | --- |
-| `hlint.py` | Read a file, write artifacts, coordinate validation and execution |
+| `HLInt.py` | Read a file, write artifacts, coordinate validation and execution |
 | `hl/preprocess.py` | Produce the space-removal artifact |
 | `hl/lexer.py` | Recognize tokens and record their source positions |
 | `hl/parser.py` | Check grammar and build the AST with recursive descent |

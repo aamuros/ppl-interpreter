@@ -10,7 +10,7 @@ from hl.lexer import Lexer
 from hl.parser import Parser
 from hl.preprocess import remove_spaces
 from hl.semantic import SemanticChecker
-from hlint import run_file
+from HLInt import run_file
 
 
 ROOT = Path(__file__).resolve().parents[1]
